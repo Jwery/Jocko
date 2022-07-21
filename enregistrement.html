@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Jocko - Cupcakes</title>
+    <link href='http://fonts.googleapis.com/css?family=Courgette' rel='stylesheet' type='text/css'>
+    <link type="text/css" rel="stylesheet" media="all" href="css/reset.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/font-awesome.css" />
+    <link type="text/css" rel="stylesheet" media="all" href="css/styles.css" />
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            <div class="logo"></div>
+            <div class="title">Jocko - Cupcakes</div>
+            <div class="social-media">
+                <div class="facebook"><a href="https://www.facebook.com/"><i class="fa fa-facebook"></i></a></div>
+                <div class="google"><a href="https://plus.google.com/"><i class="fa fa-google-plus"></i></a></div>
+                <div class="twitter"><a href="https://twitter.com/"><i class="fa fa-twitter"></i></a></div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Acceuil</a></li>
+            <li><a href="recette.html">Recettes</a></li>
+            <li class="active"><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="galerie.html">Galerie</a></li>
+            <li><a href="actu.html">Actualit&eacute;</a></li>
+            <li><a href="favoris.html">Favoris</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+			
+    <main>
+	
+        <div class="content page-index">
+				 <div class="breadcumb" style="width: 100% !important;">
+				<ul>
+					<li><a href="index.html">Accueil</a></li>
+                    <li>></li>
+					<li><a href="newsletter.html">Newsletter</a></li>					
+                    <li>></li>
+					<li><a href="#">Demande d'enregistrement validée</a></li>
+				</ul>
+			</div>
+		<h2>Merci</h2>
+            <!-- Begin Content -->
+            <div style="text-align:center; width: 100% !important">
+                  <br /> 
+                    <br /> 
+           		Nous avons bien pris en compte votre adresse email : <span id="email"></span>.
+                <br /> 
+                <br /> 
+				   <br />
+				<a href="index.html">Revenir à la page d'accueil</a>
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+                <br /> 
+            </div>
+            <!-- End Content -->
+        </div>
+    </main>
+    <footer>
+        &copy; 2015 Jocko  | <a href="plan.html">Plan du site</a>
+    </footer>
+    <script>
+        $(document).ready(function(){
+            $('#email').html(location.search.replace('?email=','').replace("%40","@"));
+        });
+    </script>
+</body>
+</html>
+
+
